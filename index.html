@@ -23,6 +23,7 @@
       <li><a href="#about" class="nav-link" data-section="about">About</a></li>
       <li><a href="#work" class="nav-link" data-section="work">Projects</a></li>
       <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+      <li><a href="#certificates" class="nav-link" data-section="certificates">Certificates</a></li>
       <li><a href="#journey" class="nav-link" data-section="journey">Journey</a></li>
       <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
     </ul>
@@ -188,9 +189,75 @@
     </div>
   </section>
 
+  <!-- ============ CERTIFICATES ============ -->
+  <section id="certificates" class="section container">
+    <p class="eyebrow">04 — Certificates</p>
+    <h2 class="section-title">Certificates</h2>
+
+    <div class="certificates-grid" id="certificatesGrid">
+
+      <article class="cert-card reveal-right"
+        data-cert-image="Certificates/Lindelani Makhoba - Intro to Programming.png"
+        data-cert-title="Intro to programming"
+        data-cert-issuer="Kaggle"
+        data-cert-date="2026">
+        <div class="cert-thumb">
+          <img src="Certificates/Lindelani Makhoba - Intro to Programming.png" alt="Intro to programming certificate thumbnail">
+        </div>
+        <div class="cert-meta">
+          <h3 class="cert-name">Intro to programming</h3>
+          <p class="cert-issuer">Kaggle · 2026</p>
+        </div>
+      </article>
+
+      <article class="cert-card reveal-right"
+        data-cert-image="Certificates/Lindelani Makhoba - Python.png"
+        data-cert-title="Python"
+        data-cert-issuer="Kaggle"
+        data-cert-date="2026">
+        <div class="cert-thumb">
+          <img src="Certificates/Lindelani Makhoba - Python.png" alt="Python certificate thumbnail">
+        </div>
+        <div class="cert-meta">
+          <h3 class="cert-name">Python</h3>
+          <p class="cert-issuer">Kaggle · 2026</p>
+        </div>
+      </article>
+
+      <article class="cert-card reveal-right"
+        data-cert-image="Certificates/Linux_Unhatched_certificate_25059631-dut4life-ac-za_063ba7cf-3f8d-4b66-901c-e31f52adb70f.png"
+        data-cert-title="Linux unhatched"
+        data-cert-issuer="Cisco Networking Academy"
+        data-cert-date="2026">
+        <div class="cert-thumb">
+          <img src="Certificates/Linux_Unhatched_certificate_25059631-dut4life-ac-za_063ba7cf-3f8d-4b66-901c-e31f52adb70f.png" alt="Linux unhatched certificate thumbnail">
+        </div>
+        <div class="cert-meta">
+          <h3 class="cert-name">Linux unhatched</h3>
+          <p class="cert-issuer">Cisco Networking Academy · 2026</p>
+        </div>
+      </article>
+
+      <article class="cert-card reveal-right"
+        data-cert-image="Certificates/Computer_Hardware_Basics_certificate_lindelanimakhoba92-gmail-com_367d76f9-deeb-4423-894a-9bc49383fb54.png"
+        data-cert-title="Computer Hardware Basics"
+        data-cert-issuer="Cisco Networking Academy"
+        data-cert-date="2025">
+        <div class="cert-thumb">
+          <img src="Certificates/Computer_Hardware_Basics_certificate_lindelanimakhoba92-gmail-com_367d76f9-deeb-4423-894a-9bc49383fb54.png" alt="Computer Hardware Basics certificate thumbnail">
+        </div>
+        <div class="cert-meta">
+          <h3 class="cert-name">Computer Hardware Basics</h3>
+          <p class="cert-issuer">Cisco Networking Academy · 2025</p>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
   <!-- ============ JOURNEY / TIMELINE ============ -->
   <section id="journey" class="section container">
-    <p class="eyebrow">04 — Journey</p>
+    <p class="eyebrow">05 — Journey</p>
     <h2 class="section-title">My Journey</h2>
     <div class="timeline">
       <div class="timeline-row reveal-right">
@@ -211,7 +278,7 @@
   <section id="contact" class="section container">
     <div class="contact-grid">
       <div class="contact-info">
-        <p class="eyebrow">05 — Contact</p>
+        <p class="eyebrow">06 — Contact</p>
         <h2 class="section-title">Let's Connect</h2>
         <p class="contact-sub">Open to full-time roles, contract work, and ambitious side
         projects.</p>
@@ -237,6 +304,7 @@
             <label for="message">Message</label>
           </div>
           <button type="submit" class="submit">Send message</button>
+          <p class="form-note" id="formNote"></p>
         </form>
     </div>
   </section>
@@ -260,6 +328,20 @@
     <p class="footer-note">© 2026 Lindelani Makhoba. Built with HTML, CSS &amp; JS.</p>
   </div>
 </footer>
+
+<!-- ============ CERTIFICATE MODAL ============ -->
+<div class="cert-modal-overlay" id="certModalOverlay">
+  <div class="cert-modal" role="dialog" aria-modal="true" aria-labelledby="certModalTitle">
+    <button class="cert-modal-close" id="certModalClose" aria-label="Close certificate">&times;</button>
+    <div class="cert-modal-image-wrap">
+      <img src="" alt="" id="certModalImage" class="cert-modal-image">
+    </div>
+    <div class="cert-modal-info">
+      <h3 id="certModalTitle"></h3>
+      <p id="certModalIssuer"></p>
+    </div>
+  </div>
+</div>
 
 <script src="script.js"></script>
 </body>
