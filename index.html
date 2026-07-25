@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lindelani Makhoba — ICT</title>
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Space+Grotesk:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header class="site-header">
+  <nav class="nav container">
+    <a href="#intro" class="logo">Lindelani Makhoba</a>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#intro" class="nav-link active" data-section="intro">Intro</a></li>
+      <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+      <li><a href="#work" class="nav-link" data-section="work">Projects</a></li>
+      <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+      <li><a href="#journey" class="nav-link" data-section="journey">Journey</a></li>
+      <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+    </ul>
+
+    <a href="#" class="btn btn-outline resume-btn"><!-- PLACEHOLDER: link to your resume PDF -->Resume</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+<main>
+
+  <!-- ============ HERO / INTRO ============ -->
+  <section id="intro" class="hero container">
+    <div class="hero-text">
+      <p class="eyebrow reveal-load" style="--d:0">Lindelani Makhoba</p>
+      <h1 class="hero-title reveal-load" style="--d:1">
+        Ideas, <span class="italic">engineered.</span>, into reality
+      </h1>
+      <p class="hero-sub reveal-load" style="--d:2">
+        Hi, I’m Lindelani, a passionate Durban University of Technology student and tech 
+        enthusiast who loves staying close to the latest in technology.
+      </p>
+      <div class="hero-actions reveal-load" style="--d:3">
+        <a href="#work" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-ghost">Get In Touch</a>
+      </div>
+    </div>
+
+    <div class="hero-portrait reveal-load" style="--d:1">
+      <div class="portrait-frame">
+        <img src="images/my image.jpg" alt="Portrait of Lindelani Makhoba" class="portrait-img">
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about" class="section container">
+    <div class="section-grid">
+      <div class="section-head">
+        <p class="eyebrow">01 — About</p>
+        <h2 class="section-title">Lindelani Makhoba</h2>
+        <p class="section-kicker">ICT Student</p>
+        <p class="section-label">What I am</p>
+      </div>
+      <div class="section-body">
+        <p>I am an IT student passionate about programming, operating systems, 
+           and building practical solutions through code. My journey has been shaped by
+           hands-on projects in C#, ASP.NET MVC, SQL Server, and Python, where I’ve 
+           learned to turn complex concepts into functional applications. I enjoy 
+           exploring topics like cybersecurity, Linux systems, and resource monitoring, 
+           while continuously improving my skills in object-oriented programming learning other
+           programming languages.
+           Beyond academics, I’m driven by curiosity and innovation—whether it’s experimenting 
+           with new tech, optimizing workflows, or designing creative digital solutions.
+           My goal is to grow into a versatile developer who bridges technical expertise 
+           with problem-solving creativity.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WORK / PROJECTS ============ -->
+  <section id="work" class="section container">
+    <div class="section-head-row">
+      <div>
+        <p class="eyebrow">02 — My Work</p>
+        <h2 class="section-title">Projects</h2>
+      </div>
+      <a href="#" class="full-archive">Full Archive →</a>
+    </div>
+
+    <div class="projects-grid" id="projectsGrid">
+      <!-- Project card 1 -->
+      <article class="project-card reveal-right">
+        <div class="project-thumb thumb-light">
+          <span class="thumb-tag">Streaming Hub Website</span>
+          <div class="thumb-mock">
+            <p class="thumb-status">● Stream now</p>
+            <h3>Streaming Hub</h3>
+            <p class="thumb-copy">a simple directory that provides quick links to popular 
+              streaming platforms like Netflix, Disney+, Prime Video, Hulu, and more. 
+              It acts as a centralized hub for users to easily navigate to different streaming services from one page</p>
+            <span class="thumb-btn"> <a class="chip" href="https://lindelani036.github.io/Streaming-hub/" target="_blank">Open</a></span>
+          </div>
+        </div>
+        <div class="project-meta">
+          <span class="project-index">01</span>
+          <div>
+            <h3 class="project-name">Streaming Hub</h3>
+            <p class="project-desc">Just showcasing web design skills</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project card 2 -->
+
+      <!-- Project card 3 -->
+
+      <!-- Project card 4 -->
+
+      <!-- PLACEHOLDER: swap thumbnails, copy, and links for your own projects -->
+    </div>
+  </section>
+
+  <!-- ============ SKILLS / CAPABILITIES ============ -->
+  <section id="skills" class="section container">
+    <p class="eyebrow">03 — Skills</p>
+    <h2 class="section-title">Skills Page</h2>
+
+    <div class="skills-grid">
+      <div class="skill-card reveal-right">
+        <span class="skill-index">01</span>
+        <h3>C# .Net</h3>
+        <p>During my studies at DUT, I built a strong foundation in C# and the .NET framework, 
+          starting with the basics of syntax, data types, and control structures, then 
+          progressing into more advanced concepts like object-oriented programming (OOP)—covering 
+          encapsulation, inheritance, polymorphism, and abstraction. I gained practical experience
+          developing Windows Forms applications, which taught me how to design interactive desktop 
+          software. Moving forward, I explored ASP.NET MVC, where I learned to structure web 
+          applications using models, views, and controllers, and worked with Entity Framework
+          Core to connect applications to databases. These skills gave me the ability to design,
+          build, and debug both desktop and web solutions, while understanding how different 
+          layers of an application interact within the .NET ecosystem.</p>
+        <div class="tags">
+          <span class="tag">C#</span>
+          <span class="tag">.NET</span>
+          <span class="tag">Windows Forms</span>
+          <span class="tag">ASP.NET MVC</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal-right">
+        <span class="skill-index">02</span>
+        <h3>Algorithms and Data Structures (Python)</h3>
+        <p>In the Algorithms and Data Structures module at DUT, I developed a solid understanding of 
+          how data is organized, manipulated, and optimized in computer systems. I worked with core 
+          concepts such as arrays, stacks, queues, linked lists, trees, heaps, and hash tables, 
+          learning how each structure supports efficient data storage and retrieval. I explored 
+          algorithm analysis to evaluate performance, and practiced implementing searching, sorting, 
+          and recursion techniques to solve problems effectively. This module strengthened my ability 
+          to design and reason about algorithms, while building practical skills in structuring data 
+          for both performance and scalability.</p>
+        <div class="tags">
+          <span class="tag">Python</span>
+          <span class="tag">Algorithms</span>
+          <span class="tag">Data Structures</span>
+          <span class="tag">DUT</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal-right">
+        <span class="skill-index">03</span>
+        <h3>Computer Hardware Basics</h3>
+        <p>Learned the fundamentals of computer hardware, including CPU architecture, memory hierarchy, storage devices, and peripheral components. Gained hands-on experience assembling and troubleshooting PCs, and understanding how hardware impacts software performance.</p>
+        <div class="tags">
+          <span class="tag">Hardware</span>
+          <span class="tag">CPU</span>
+          <span class="tag">Memory</span>
+          <span class="tag">Storage</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ JOURNEY / TIMELINE ============ -->
+  <section id="journey" class="section container">
+    <p class="eyebrow">04 — Journey</p>
+    <h2 class="section-title">My Journey</h2>
+    <div class="timeline">
+      <div class="timeline-row reveal-right">
+        <span class="timeline-date">2025 – 2027</span>
+        <div class="timeline-content">
+          <h3>Bachelor of Information and Communications Technology</h3>
+          <p class="timeline-company">Durban University of Technology</p>
+          <p>The BICT degree at Durban University of Technology (DUT) is a three-year qualification 
+            designed to prepare students for careers in the fast-growing ICT industry. It blends 
+            theoretical foundations with practical skills, ensuring graduates are ready to solve 
+            real-world problems and contribute meaningfully to business and society.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" class="section container">
+    <div class="contact-grid">
+      <div class="contact-info">
+        <p class="eyebrow">05 — Contact</p>
+        <h2 class="section-title">Let's Connect</h2>
+        <p class="contact-sub">Open to full-time roles, contract work, and ambitious side
+        projects.</p>
+
+        <div class="contact-details">
+          <a href="mailto:lindelanimakhoba92@gmail.com" class="contact-line">lindelanimakhoba92@gmail.com</a>
+          <p class="contact-line">+27655601337</p>
+          <p class="contact-line">Durban, South Africa</p>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm" action="" novalidate data-endpoint="https://formspree.io/f/yourFormID">
+          <div class="field">
+            <input type="text" id="name" name="name" required />
+            <label for="name">Full name</label>
+          </div>
+          <div class="field">
+            <input type="email" id="email" name="email" required />
+            <label for="email">Email address</label>
+          </div>
+          <div class="field">
+            <textarea id="message" name="message" required></textarea>
+            <label for="message">Message</label>
+          </div>
+          <button type="submit" class="submit">Send message</button>
+        </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <a href="#intro" class="logo">Lindelani.</a>
+
+    <ul class="social-icons">
+      <li><a href="https://github.com/Lindelani036" aria-label="GitHub">
+        <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12 .5C5.73.5.98 5.24.98 11.52c0 5.02 3.26 9.28 7.78 10.78.57.1.78-.25.78-.55 0-.27-.01-1.16-.02-2.1-3.17.69-3.84-1.36-3.84-1.36-.52-1.31-1.27-1.66-1.27-1.66-1.04-.71.08-.7.08-.7 1.15.08 1.75 1.18 1.75 1.18 1.02 1.75 2.68 1.24 3.33.95.1-.74.4-1.24.72-1.53-2.53-.29-5.19-1.27-5.19-5.63 0-1.24.44-2.26 1.17-3.06-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.14 1.17a10.9 10.9 0 0 1 5.72 0c2.18-1.48 3.14-1.17 3.14-1.17.62 1.58.23 2.75.11 3.04.73.8 1.17 1.82 1.17 3.06 0 4.37-2.67 5.34-5.21 5.62.41.36.77 1.06.77 2.15 0 1.55-.01 2.8-.01 3.18 0 .3.2.66.79.55A11.03 11.03 0 0 0 23 11.52C23 5.24 18.27.5 12 .5Z"/></svg>
+      </a></li>
+      <li><a href="https://www.linkedin.com/in/lindelani-makhoba-3ba277310" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5ZM.24 8.25h4.5V23H.24V8.25ZM8.4 8.25h4.3v2.02h.06c.6-1.13 2.06-2.32 4.24-2.32 4.53 0 5.37 2.98 5.37 6.85V23h-4.5v-6.9c0-1.65-.03-3.77-2.3-3.77-2.3 0-2.66 1.8-2.66 3.65V23H8.4V8.25Z"/></svg>
+      </a></li>
+    </ul>
+
+    <p class="footer-note">© 2026 Lindelani Makhoba. Built with HTML, CSS &amp; JS.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
